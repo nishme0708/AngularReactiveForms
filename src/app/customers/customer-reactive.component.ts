@@ -86,7 +86,6 @@ export class CustomerReactiveComponent implements OnInit {
     if((c.touched || c.dirty) && c.errors){
       this.emailMessage = Object.keys(c.errors).map(
         key => this.emailMessage+= this.validationMessages[key]).join(' ');
-      );
     }
   }
 
